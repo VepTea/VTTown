@@ -1,0 +1,88 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h2{
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+main {
+    padding: 20px;
+}
+nav ol {
+    margin: 0;
+    padding: 20px 0px 20px 20px ;
+    width: 150px;
+}
+
+#content {
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 0fr 0fr 1fr;
+
+}
+img {
+    width:100%;
+}
+.pic {
+    width:30%;
+    float: left;
+}
+article{
+    float: left;
+}
+@media screen and (max-width: 1200px){
+    #content {
+        margin: 0 auto;
+        padding: 0;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .grid {
+        display:block;
+    }
+    
+    #content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ol {
+        margin: 0;
+        padding: 20px 20px 20px 40px ;
+        border-right: 0px solid black;
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+}
+
+@media screen and (max-width: 500px){
+    .pic { width: 100%;}
+}
